@@ -41,8 +41,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authz -> authz
                         // Endpoints públicos (registro y login)
                         .requestMatchers("/api/auth/**",
-                                "/login",
-                                "/register")
+                                "/register",
+                                "/login")
                         .permitAll()
 
                         // Endpoints de productos:
