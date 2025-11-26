@@ -40,9 +40,7 @@ public class SecurityConfig {
                 // Definimos las reglas de autorización
                 .authorizeHttpRequests(authz -> authz
                         // Endpoints públicos (registro y login)
-                        .requestMatchers("/api/auth/**",
-                                "/register",
-                                "/login")
+                        .requestMatchers("/api/auth/**")
                         .permitAll()
 
                         // Endpoints de productos:
