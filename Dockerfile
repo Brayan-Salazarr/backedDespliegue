@@ -7,7 +7,7 @@ WORKDIR /app
 COPY pom.xml .
 
 #Instalar dependencias (evitar go-offline porque falla en Render)
-RUN mvn -q -e -DskipTests package || true
+RUN mvn -X -e -DskipTests package
 
 #Copiar el código fuente
 COPY src ./src

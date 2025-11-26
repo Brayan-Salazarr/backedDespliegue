@@ -76,6 +76,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.5.7</version>
+            <configuration>
+                <mainClass>com.example.adso.AdsoApplication</mainClass>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>
