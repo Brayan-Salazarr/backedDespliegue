@@ -72,8 +72,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         
         // Permitir el origen de Angular (ajusta el puerto si es necesario)
-        configuration.setAllowedOrigins(List.of("http://localhost:4200",
-        "https://front-ensayo.vercel.app")); 
+        configuration.setAllowedOrigins(List.of("https://front-ensayo.vercel.app")); 
         
         // Permitir los métodos HTTP que usas (GET, POST, etc.)
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
